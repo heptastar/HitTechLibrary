@@ -12,6 +12,7 @@
 
 2. login to cloudflare from local machine
 ~~~
+npm i -D wrangler@latest
 npx wrangler login
 ~~~
 
