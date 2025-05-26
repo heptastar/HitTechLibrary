@@ -1,4 +1,4 @@
-# HitTechLibrary: An Open-sourced CMS for Library
+# 📚 HitTechLibrary: An Open-sourced CMS for Library
 
 ## 1. Features
 - book create, retrieve, update and delete
