@@ -1,6 +1,13 @@
 # HitTechLibrary: An Open-sourced CMS for Library
 
-## Install and Use
+## 1. Features
+- book create, retrieve, update and delete
+- lending record's create, update, retieve
+- common user login and registration
+- admin user login and registration
+- common user lending info (future)
+  
+## 2. Install and Use
 1. clone the project to local machine e.g. macbook or linux
 
 2. login to cloudflare from local machine
@@ -75,7 +82,33 @@ npx wrangler d1 execute libdb2 --remote --file schemas/randbook.sql
 npx wrangler d1 execute libdb2 --file schemas/randbook.sql
 ~~~
 
-5. 
+5. start project in local machine
+~~~
+npm run preview
+~~~
+
+6. deploy to cloudflare
+~~~
+npm run deploy
+~~~
+- you will obtain following infor
+~~~
+✨ Compiled Worker successfully
+✨ Uploading Worker bundle
+✨ Uploading _routes.json
+🌎 Deploying...
+✨ Deployment complete! Take a peek over at https://YOUR-ASSIGNED-ID.lib-cfd1pg-250523-js-njs-cfpg.pages.dev
+✨ Deployment alias URL: https://main.YOUR-ASSIGNED-DOMAINNAME.pages.dev
+~~~
+
+7. admin user setting
+- click the previous assigned url to register admin account, for example, admin@qq.com, with password 122
+- goto cloudflare.com to login with your Cloudflare account
+- sidebar-> Storage & Databases-> D1 SQL Database-> libdb2-> Tables-> users-> ... -> update-> userrank NEEDS TO BE CHANGED TO 3
+- user admin@qq.com with pwd 122 to login at URL: https://main.YOUR-ASSIGNED-DOMAINNAME.pages.dev
+- BY HERE ALL IS DONE! ENJOY!
+
+
 
 
 
