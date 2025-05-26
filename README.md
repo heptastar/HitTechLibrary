@@ -1,5 +1,10 @@
 # 📚 HitTechLibrary: An Open-sourced Book Management System based on Free-charged Cloudflare Pages and D1 Database, full-stacked with Nextjs and Tailwindcss
 
+## 0. Demo
+- Demo addr: https://main.lib-cfd1pg-250523-js-njs-cfpg.pages.dev/
+- Demo admin account: admin@qq.com
+- Demo password: 122
+  
 ## 1. Features
 - book create, retrieve, update and delete
 - lending record's create, update, retieve
@@ -108,6 +113,9 @@ npm run deploy
 - sidebar-> Storage & Databases-> D1 SQL Database-> libdb2-> Tables-> users-> ... -> update-> userrank NEEDS TO BE CHANGED TO 3
 - user admin@qq.com with pwd 122 to login at URL: https://main.YOUR-ASSIGNED-DOMAINNAME.pages.dev
 - BY HERE ALL IS DONE! ENJOY!
+
+## Contact
+- this project is continuous dev and maintained by [Heptastar Intelligent Tech](www.hit2023.com), contact us.
 
 
 
