@@ -1,4 +1,4 @@
-# 📚 HitTechLibrary: An Open-sourced CMS for Library
+# 📚 HitTechLibrary: An Open-sourced Book Management System based on Free-charged Cloudflare Pages and D1 Databbase, full-stacked with Nextjs and Tailwindcss
 
 ## 1. Features
 - book create, retrieve, update and delete
