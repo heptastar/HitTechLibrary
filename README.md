@@ -13,7 +13,13 @@
 - common user lending info (future)
   
 ## 2. Install and Use
-1. clone the project to local machine e.g. macbook or linux
+1. clone the project to local machine e.g. macbook or linux, then goto remove folders if exist then install needed packages
+~~~
+rm -rf .next
+rm -rf node_modules
+rm package-lock.json 
+npm install 
+~~~
 
 2. login to cloudflare from local machine
 ~~~
