@@ -12,7 +12,7 @@
 - lending record's create, update, retieve
 - common user login and registration
 - admin user login and registration
-- common user lending info (future)
+- common user lending info display
   
 ## 2. Install and Use
 1. clone the project to local machine e.g. macbook or linux, then goto remove folders if exist then install needed packages
