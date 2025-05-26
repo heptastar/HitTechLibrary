@@ -2,8 +2,10 @@
 
 ## 0. Demo
 - Demo addr: https://main.lib-cfd1pg-250523-js-njs-cfpg.pages.dev/
-- Demo admin account: admin@qq.com
+- Demo admin user account: admin@qq.com
 - Demo password: 122
+- Demo common user acc: u2@qq.com
+- Demo common user pwd: 122
   
 ## 1. Features
 - book create, retrieve, update and delete
