@@ -153,16 +153,16 @@ export default function Home() {
       <nav className="bg-gradient-to-r from-blue-500 to-white-900 p-4 text-white shadow-md">
         <div className="container mx-auto flex justify-between items-center">
           <Link href="/" className="text-2xl font-bold">HitTechLibrary</Link>
-         
+
           <div className="flex items-center space-x-4">
-          
+
             {/* Conditionally render Borrow link based on user rank */}
             {user && user.userrank > 2 && (
               <Link href="/borrowpg" className="font-bold bg-white hover:bg-gray-200 text-blue-700 px-3 py-1 rounded shadow">
                 Lend
               </Link>
             )}
-     
+
             {/* Conditional rendering for Book Manage button */}
             {user && user.userrank === 3 && (
               <Link href="/bookmanagepg" className="font-bold bg-white hover:bg-gray-200 text-blue-700 px-3 py-1 rounded shadow">
@@ -187,12 +187,18 @@ export default function Home() {
               <div></div>
             )}
 
+            {/* Add the new button linking to userlendinfopg */}
+            {user && (
+              <Link href="/userlendinfopg" className="font-bold bg-white hover:bg-gray-200 text-blue-700 px-3 py-1 rounded shadow">
+                My Borrows
+              </Link>
+            )}
+
             {/* Language Dropdown Button - Always visible */}
-         
 
             {user ? (
               <>
- 
+
                 <button
                   onClick={async () => {
                     try {
@@ -202,26 +208,25 @@ export default function Home() {
                       });
 
                       if (res.ok) {
-                        console.log('Logout successful');
-                        alert('Logout successful!'); // Alert on success
                         // Redirect to login page after successful logout
                         router.push('/loginpg');
                       } else {
+                        // Handle logout error
                         console.error('Logout failed');
-                        alert('Logout failed. Please try again.'); // Alert on failure
+                        alert('Logout failed. Please try again.');
                       }
                     } catch (error) {
                       console.error('Error during logout:', error);
-                      alert('An error occurred during logout.'); // Alert on error
+                      alert('An error occurred during logout.');
                     }
                   }}
-                  className="font-bold bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded shadow"
+                  className="font-bold bg-white hover:bg-gray-200 text-blue-700 px-3 py-1 rounded shadow"
                 >
                   Logout
                 </button>
               </>
             ) : (
-              <Link href="/loginpg" className="font-bold bg-green-500 hover:bg-green-600 text-white px-3 py-1 rounded shadow">
+              <Link href="/loginpg" className="font-bold bg-white hover:bg-gray-200 text-blue-700 px-3 py-1 rounded shadow">
                 Login
               </Link>
             )}
