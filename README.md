@@ -2,18 +2,26 @@
 
 ## 0. Demo
 - Demo addr: https://main.lib-cfd1pg-250523-js-njs-cfpg.pages.dev/
-- Demo admin account: admin@qq.com
+- Demo admin user account: admin@qq.com
 - Demo password: 122
+- Demo common user acc: u2@qq.com
+- Demo common user pwd: 122
   
 ## 1. Features
 - book create, retrieve, update and delete
 - lending record's create, update, retieve
 - common user login and registration
 - admin user login and registration
-- common user lending info (future)
+- common user lending info display
   
 ## 2. Install and Use
-1. clone the project to local machine e.g. macbook or linux
+1. clone the project to local machine e.g. macbook or linux, then goto remove folders if exist then install needed packages
+~~~
+rm -rf .next
+rm -rf node_modules
+rm package-lock.json 
+npm install 
+~~~
 
 2. login to cloudflare from local machine
 ~~~

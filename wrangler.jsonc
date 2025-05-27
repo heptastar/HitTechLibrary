@@ -17,7 +17,9 @@
 		{
 		  "binding": "DB",
 		  "database_name": "libdb2",
-		  "database_id": "8488fc8e-7895-41ff-bd33-b8bd837a9c84"
+
+		  "database_id": "XXX-YOUR-DB-ID-HERE-XXX"
+
 		}
 	  ],
 	"vars": { 
